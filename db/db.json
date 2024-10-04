@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "title": "Wireless Headphones",
+      "price": 89.99,
+      "description": "High-quality wireless headphones with noise cancellation and 20-hour battery life."
+    },
+    {
+      "title": "Smartwatch",
+      "price": 199.99,
+      "description": "Stylish smartwatch with fitness tracking, heart rate monitoring, and customizable watch faces."
+    },
+    {
+      "title": "Portable Charger",
+      "price": 29.99,
+      "description": "Compact portable charger with 10,000mAh capacity, perfect for on-the-go charging."
+    },
+    {
+      "title": "4K Ultra HD TV",
+      "price": 499.99,
+      "description": "55-inch 4K Ultra HD TV with smart features and HDR for an immersive viewing experience."
+    },
+    {
+      "title": "Bluetooth Speaker",
+      "price": 49.99,
+      "description": "Durable Bluetooth speaker with rich sound quality and waterproof design, perfect for outdoor use."
+    },
+    {
+      "title": "Fitness Tracker",
+      "price": 59.99,
+      "description": "Advanced fitness tracker that monitors steps, sleep, and provides real-time heart rate data."
+    },
+    {
+      "title": "Laptop Stand",
+      "price": 39.99,
+      "description": "Ergonomic laptop stand with adjustable height and cooling vents for better airflow."
+    },
+    {
+      "title": "VR Headset",
+      "price": 299.99,
+      "description": "Immersive virtual reality headset with a wide field of view and motion tracking capabilities."
+    },
+    {
+      "title": "Electric Toothbrush",
+      "price": 79.99,
+      "description": "Rechargeable electric toothbrush with multiple modes and a built-in timer for optimal brushing."
+    },
+    {
+      "title": "Smart Thermostat",
+      "price": 149.99,
+      "description": "Energy-saving smart thermostat that learns your schedule and can be controlled via smartphone."
+    },
+    {
+      "title": "Gaming Mouse",
+      "price": 59.99,
+      "description": "High-precision gaming mouse with customizable RGB lighting and ergonomic design."
+    },
+    {
+      "title": "Coffee Maker",
+      "price": 89.99,
+      "description": "Programmable coffee maker with a built-in grinder for fresh coffee every morning."
+    },
+    {
+      "title": "Water Bottle",
+      "price": 19.99,
+      "description": "Insulated stainless steel water bottle that keeps drinks cold for 24 hours and hot for 12 hours."
+    },
+    {
+      "title": "Backpack",
+      "price": 49.99,
+      "description": "Durable and spacious backpack with multiple compartments for organization and comfort."
+    }
+  ]
+}
