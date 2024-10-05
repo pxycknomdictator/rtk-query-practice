@@ -1,12 +1,6 @@
 {
   "products": [
     {
-      "title": "Wireless Headphones",
-      "price": 89.99,
-      "description": "High-quality wireless headphones with noise cancellation and 20-hour battery life.",
-      "id": "dda2"
-    },
-    {
       "title": "Smartwatch",
       "price": 199.99,
       "description": "Stylish smartwatch with fitness tracking, heart rate monitoring, and customizable watch faces.",
@@ -83,6 +77,18 @@
       "price": 49.99,
       "description": "Durable and spacious backpack with multiple compartments for organization and comfort.",
       "id": "f863"
+    },
+    {
+      "title": "Portable Blender",
+      "price": "29.99",
+      "description": " Make smoothies on the go with our Portable Blender. With a powerful motor and rechargeable battery, you can whip up your favorite drinks anywhere. Compact and easy to clean, it’s perfect for busy mornings!",
+      "id": "3a4e"
+    },
+    {
+      "id": "115e",
+      "title": "Premium Yoga Mat",
+      "price": "39.99",
+      "description": "Elevate your practice with our Premium Yoga Mat. This non-slip, extra-thick mat provides comfort and stability for all types of workouts. Lightweight and portable, it’s perfect for home use or yoga classes."
     }
   ]
 }

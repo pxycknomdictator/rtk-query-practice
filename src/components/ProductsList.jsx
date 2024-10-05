@@ -4,8 +4,11 @@ import {
 } from "../store/features/productSlice";
 import { Error, Loading } from "./Status";
 import { Card } from "./Card";
+import { useNavigate } from "react-router-dom";
 
 export const ProductsList = () => {
+  const navigate = useNavigate();
+
   const {
     data: products,
     isError,
@@ -20,6 +23,10 @@ export const ProductsList = () => {
     refetch();
   };
 
+  const handleUpdateProduct = (payload) => {
+    navigate(`/products/${payload.id}`, { state: payload });
+  };
+
   if (isLoading) return <Loading />;
   if (isError) return <Error />;
 
@@ -30,6 +37,7 @@ export const ProductsList = () => {
           key={Math.random()}
           data={product}
           onDelete={handleDeleteProduct}
+          onUpdate={handleUpdateProduct}
         />
       ))}
     </ul>
