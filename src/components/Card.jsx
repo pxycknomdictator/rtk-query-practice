@@ -1,3 +1,20 @@
 export const Card = () => {
-  return <li>Card</li>;
+  return (
+    <li className="w-full shadow-lg px-5 py-6">
+      <h2 className="text-2xl font-semibold">Wireless Headphones</h2>
+      <h3 className="text-[1.1rem] text-zinc-600 my-2">Price: 89.99</h3>
+      <p className="text-[.9rem] my-3 text-gray-500">
+        High-quality wireless headphones with noise cancellation and 20-hour
+        battery life.
+      </p>
+      <div className="space-y-3 sm:space-x-3">
+        <button className="text-white font-semibold py-1.5 w-full sm:w-auto px-5 bg-green-500 hover:bg-green-600">
+          Edit
+        </button>
+        <button className="text-white font-semibold py-1.5 w-full sm:w-auto px-5 bg-red-500 hover:bg-red-600">
+          Delete
+        </button>
+      </div>
+    </li>
+  );
 };
