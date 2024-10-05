@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
-export const Card = ({ data }) => {
-  const { title, description, price } = data;
+export const Card = ({ data, onDelete }) => {
+  const { title, description, price, id } = data;
+
   return (
     <li className="w-full shadow-lg px-5 py-6">
       <h2 className="text-2xl font-semibold">{title}</h2>
@@ -10,7 +11,10 @@ export const Card = ({ data }) => {
         <button className="text-white font-semibold py-1.5 w-full sm:w-auto px-5 bg-green-500 hover:bg-green-600">
           Edit
         </button>
-        <button className="text-white font-semibold py-1.5 w-full sm:w-auto px-5 bg-red-500 hover:bg-red-600">
+        <button
+          onClick={() => onDelete(id)}
+          className="text-white font-semibold py-1.5 w-full sm:w-auto px-5 bg-red-500 hover:bg-red-600"
+        >
           Delete
         </button>
       </div>

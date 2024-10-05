@@ -15,7 +15,14 @@ export const productsSlice = createApi({
         body: newProduct,
       }),
     }),
+    deleteProductById: builder.mutation({
+      query: (productId) => ({
+        url: `/products/${productId}`,
+        method: "DELETE",
+      }),
+    }),
   }),
 });
 
-export const { useGetAllProductsQuery, useAddNewProductMutation } = productsSlice;
+export const { useGetAllProductsQuery, useAddNewProductMutation, useDeleteProductByIdMutation } =
+  productsSlice;

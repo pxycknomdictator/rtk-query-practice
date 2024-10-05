@@ -1,16 +1,22 @@
 import { useState } from "react";
-import { useAddNewProductMutation } from "../store/features/productSlice";
+import {
+  useAddNewProductMutation,
+  useGetAllProductsQuery,
+} from "../store/features/productSlice";
 import { Error, Loading } from "./Status";
 
 export const AddProduct = () => {
-  const [formData, setFormData] = useState({
+  const initialState = {
     title: "",
     price: 0,
     description: "",
-  });
+  };
+  const [formData, setFormData] = useState(initialState);
 
   const [addProduct, { isError, isLoading }] =
     useAddNewProductMutation(formData);
+
+  const { refetch } = useGetAllProductsQuery();
 
   if (isLoading) return <Loading />;
   if (isError) return <Error />;
@@ -20,11 +26,15 @@ export const AddProduct = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    addProduct(formData);
-    setFormData({});
+    await addProduct(formData);
+    setFormData(initialState);
+    refetch();
   };
+
+  if (isLoading) return <Loading />;
+  if (isError) return <Error />;
 
   return (
     <form onSubmit={handleSubmit}>
@@ -67,6 +77,7 @@ export const AddProduct = () => {
         className="text-white bg-red-500 hover:bg-red-600 py-2 w-full sm:w-auto sm:px-6 mt-3 block rounded cursor-pointer font-semibold"
         type="submit"
         value="Create Product"
+        disabled={isLoading && true}
       />
     </form>
   );

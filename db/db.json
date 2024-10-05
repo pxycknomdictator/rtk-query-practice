@@ -83,30 +83,6 @@
       "price": 49.99,
       "description": "Durable and spacious backpack with multiple compartments for organization and comfort.",
       "id": "f863"
-    },
-    {
-      "id": "4e3f",
-      "title": "Hand bag",
-      "price": "93.99",
-      "description": "Black hand bag for womans."
-    },
-    {
-      "id": "4a40",
-      "title": "Mens Jacket",
-      "price": "93",
-      "description": "Jacket for mens"
-    },
-    {
-      "id": "8449",
-      "title": "nodejs",
-      "price": "93939",
-      "description": "kasfjlajlajflajl"
-    },
-    {
-      "id": "2c6b",
-      "title": "nextjs",
-      "price": "93939",
-      "description": "ajflajljkajldfjal"
     }
   ]
 }
