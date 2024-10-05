@@ -7,7 +7,15 @@ export const productsSlice = createApi({
     getAllProducts: builder.query({
       query: () => "/products",
     }),
+    addNewProduct: builder.mutation({
+      query: (newProduct) => ({
+        url: "/products",
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: newProduct,
+      }),
+    }),
   }),
 });
 
-export const { useGetAllProductsQuery } = productsSlice;
+export const { useGetAllProductsQuery, useAddNewProductMutation } = productsSlice;

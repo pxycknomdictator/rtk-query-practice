@@ -1,8 +1,6 @@
 import { useGetAllProductsQuery } from "../store/features/productSlice";
+import { Error, Loading } from "./Status";
 import { Card } from "./Card";
-
-const Loading = () => <h1>Loading...</h1>;
-const Error = () => <h1>Oh nooooooooo we got an Error!!!</h1>;
 
 export const ProductsList = () => {
   const { data: products, isError, isLoading } = useGetAllProductsQuery();

@@ -1,6 +1,33 @@
+import { useState } from "react";
+import { useAddNewProductMutation } from "../store/features/productSlice";
+import { Error, Loading } from "./Status";
+
 export const AddProduct = () => {
+  const [formData, setFormData] = useState({
+    title: "",
+    price: 0,
+    description: "",
+  });
+
+  const [addProduct, { isError, isLoading }] =
+    useAddNewProductMutation(formData);
+
+  if (isLoading) return <Loading />;
+  if (isError) return <Error />;
+
+  const handleInputChanges = (event) => {
+    const { name, value } = event.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    addProduct(formData);
+    setFormData({});
+  };
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <section className="grid grid-cols-2 gap-5 mb-4">
         <div>
           <label htmlFor="title">Title</label>
@@ -9,6 +36,8 @@ export const AddProduct = () => {
             type="text"
             name="title"
             id="title"
+            value={formData.title}
+            onChange={handleInputChanges}
           />
         </div>
         <div>
@@ -18,6 +47,8 @@ export const AddProduct = () => {
             type="number"
             name="price"
             id="price"
+            value={formData.price}
+            onChange={handleInputChanges}
           />
         </div>
       </section>
@@ -28,6 +59,8 @@ export const AddProduct = () => {
           name="description"
           id="description"
           rows="5"
+          value={formData.description}
+          onChange={handleInputChanges}
         ></textarea>
       </div>
       <input

@@ -3,72 +3,110 @@
     {
       "title": "Wireless Headphones",
       "price": 89.99,
-      "description": "High-quality wireless headphones with noise cancellation and 20-hour battery life."
+      "description": "High-quality wireless headphones with noise cancellation and 20-hour battery life.",
+      "id": "dda2"
     },
     {
       "title": "Smartwatch",
       "price": 199.99,
-      "description": "Stylish smartwatch with fitness tracking, heart rate monitoring, and customizable watch faces."
+      "description": "Stylish smartwatch with fitness tracking, heart rate monitoring, and customizable watch faces.",
+      "id": "7234"
     },
     {
       "title": "Portable Charger",
       "price": 29.99,
-      "description": "Compact portable charger with 10,000mAh capacity, perfect for on-the-go charging."
+      "description": "Compact portable charger with 10,000mAh capacity, perfect for on-the-go charging.",
+      "id": "972b"
     },
     {
       "title": "4K Ultra HD TV",
       "price": 499.99,
-      "description": "55-inch 4K Ultra HD TV with smart features and HDR for an immersive viewing experience."
+      "description": "55-inch 4K Ultra HD TV with smart features and HDR for an immersive viewing experience.",
+      "id": "1d32"
     },
     {
       "title": "Bluetooth Speaker",
       "price": 49.99,
-      "description": "Durable Bluetooth speaker with rich sound quality and waterproof design, perfect for outdoor use."
+      "description": "Durable Bluetooth speaker with rich sound quality and waterproof design, perfect for outdoor use.",
+      "id": "9252"
     },
     {
       "title": "Fitness Tracker",
       "price": 59.99,
-      "description": "Advanced fitness tracker that monitors steps, sleep, and provides real-time heart rate data."
+      "description": "Advanced fitness tracker that monitors steps, sleep, and provides real-time heart rate data.",
+      "id": "b543"
     },
     {
       "title": "Laptop Stand",
       "price": 39.99,
-      "description": "Ergonomic laptop stand with adjustable height and cooling vents for better airflow."
+      "description": "Ergonomic laptop stand with adjustable height and cooling vents for better airflow.",
+      "id": "e181"
     },
     {
       "title": "VR Headset",
       "price": 299.99,
-      "description": "Immersive virtual reality headset with a wide field of view and motion tracking capabilities."
+      "description": "Immersive virtual reality headset with a wide field of view and motion tracking capabilities.",
+      "id": "e165"
     },
     {
       "title": "Electric Toothbrush",
       "price": 79.99,
-      "description": "Rechargeable electric toothbrush with multiple modes and a built-in timer for optimal brushing."
+      "description": "Rechargeable electric toothbrush with multiple modes and a built-in timer for optimal brushing.",
+      "id": "cccc"
     },
     {
       "title": "Smart Thermostat",
       "price": 149.99,
-      "description": "Energy-saving smart thermostat that learns your schedule and can be controlled via smartphone."
+      "description": "Energy-saving smart thermostat that learns your schedule and can be controlled via smartphone.",
+      "id": "b6bf"
     },
     {
       "title": "Gaming Mouse",
       "price": 59.99,
-      "description": "High-precision gaming mouse with customizable RGB lighting and ergonomic design."
+      "description": "High-precision gaming mouse with customizable RGB lighting and ergonomic design.",
+      "id": "8e61"
     },
     {
       "title": "Coffee Maker",
       "price": 89.99,
-      "description": "Programmable coffee maker with a built-in grinder for fresh coffee every morning."
+      "description": "Programmable coffee maker with a built-in grinder for fresh coffee every morning.",
+      "id": "1a8f"
     },
     {
       "title": "Water Bottle",
       "price": 19.99,
-      "description": "Insulated stainless steel water bottle that keeps drinks cold for 24 hours and hot for 12 hours."
+      "description": "Insulated stainless steel water bottle that keeps drinks cold for 24 hours and hot for 12 hours.",
+      "id": "4d9d"
     },
     {
       "title": "Backpack",
       "price": 49.99,
-      "description": "Durable and spacious backpack with multiple compartments for organization and comfort."
+      "description": "Durable and spacious backpack with multiple compartments for organization and comfort.",
+      "id": "f863"
+    },
+    {
+      "id": "4e3f",
+      "title": "Hand bag",
+      "price": "93.99",
+      "description": "Black hand bag for womans."
+    },
+    {
+      "id": "4a40",
+      "title": "Mens Jacket",
+      "price": "93",
+      "description": "Jacket for mens"
+    },
+    {
+      "id": "8449",
+      "title": "nodejs",
+      "price": "93939",
+      "description": "kasfjlajlajflajl"
+    },
+    {
+      "id": "2c6b",
+      "title": "nextjs",
+      "price": "93939",
+      "description": "ajflajljkajldfjal"
     }
   ]
 }
